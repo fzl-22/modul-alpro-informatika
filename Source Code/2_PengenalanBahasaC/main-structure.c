@@ -1,6 +1,7 @@
-#include <stdio.h>
-
-int main(){
+#include <stdio.h>  // Header File
+    // Global Declaration
+int main()  // Main Function
+{   // Opening Bracket
     int num;
     printf("Masukkan angka: ");
     scanf("%d", &num);
