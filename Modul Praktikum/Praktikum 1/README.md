@@ -24,7 +24,7 @@ Pemrograman adalah pemberian instruksi kepada komputer untuk melakukan suatu tug
 `````
 Instruksi-instruksi tersebut dituliskan dalam bentuk barisan kode dengan menggunakan bahasa pemrograman. Bahasa pemrograman memungkinkan manusia untuk menuliskan suatu perintah yang dapat dipahami oleh komputer. Menurut _Online Historical Encyclopaedia of Programming Languages_, ada 8945 bahasa pemrograman yang pernah dibuat oleh manusia. Beberapa di antaranya sangat populer, seperti Python, Javascript, PHP, dan tentunya bahasa yang akan kita gunakan nanti, yaitu bahasa C.
 
-Kenapa kita menggunakan bahasa C? karena C merupakan bahasa yang paling mendekati dengan bahasa mesin (__machine language__). Setiap instruksi di C berupa __case sensitive__. Selain itu, C adalah bahasa pemrograman yang paling cepat dan efisien.
+Mengapa menggunakan bahasa C? Bahasa C merupakan bahasa yang paling mendekati dengan bahasa mesin (__machine language__). Setiap instruksi di C berupa __case sensitive__. Bahasa C dapat menghasilkan kode yang efisien dalam hal kinerja dan penggunaan memori karena termasuk bahasa tingkat rendah yang memungkinkan pengguna untuk mengendalikan secara langsung sumber daya perangkat keras komputer. Bahasa C memiliki kompiler yang sangat efisien dalam mengoptimalkan sebuah kode secara lebih baik, menghasilkan program yang berjalan lebih cepat dan membutuhkan lebih sedikit sumber daya dibandingkan dengan bahasa tingkat lebih tinggi. Meskipun C memiliki tingkat kompleksitas yang lebih tinggi dan memerlukan pemahaman yang lebih dalam, kecepatan dan efisiensi yang tinggi membuatnya menjadi pilihan utama untuk pengembangan sistem operasi, perangkat keras, dan aplikasi yang memerlukan kinerja maksimum.
 
 # Instalasi IDE
 ### IDE (Integrated Development Environment)
@@ -37,41 +37,52 @@ Berikut merupakan IDE bahasa C/C++ yang dapat digunakan :
 * [MinGW](https://telkomuniversity.dl.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe)
 
 # Instalasi Visual Studio Code
-1. Download visual studio code sesuai dengan OS yang dipakai pada link berikut [Visual Studio Code](https://code.visualstudio.com/) 
-![Tampilan Website Download VScode](../image/download-vscode.png)
-2. Download compiler C yaitu minGW pada link berikut [MinGW Download](https://sourceforge.net/projects/mingw/) 
-3. Setelah MinGW berhasil didownload, lakukan instalasi MinGW sesuai dengan gambar di bawah ini.
+## Windows
+1. Instal Visual Studio Code sesuai dengan OS yang dipakai pada link berikut [Visual Studio Code](https://code.visualstudio.com/) 
+![Tampilan Website Download VScode](../../image/download-vscode.png)
+2. Setelah instalasi selesai, buka file yang telah diinstal dan klik "I accept the agreement". Lalu, klik next.
+![Tampilan Setup VScode 2](../../image/download-vscode-2.png)
+3. Biarkan semua tercentang secara *default*. Klik next.
+![Tampilan Setup VScode 3](../../image/download-vscode-3.png)
+4. Tunggu proses instalasi hingga selesai.
+![Tampilan Setup VScode 4](../../image/download-vscode-4.png)
+5. Instalasi selesai dan Visual Studio Code siap digunakan!
+![Tampilan Setup VScode 5](../../image/download-vscode-5.png)
+
+# Instalasi MinGW
+1. Download compiler C yaitu minGW pada link berikut [MinGW Download](https://sourceforge.net/projects/mingw/) 
+2. Setelah MinGW berhasil didownload, lakukan instalasi MinGW sesuai dengan gambar di bawah ini.
  - klik `install`
-![](../image/install-mingw1.png)
+![](../../image/install-mingw1.png)
  - klik `continue`
-![](../image/install-mingw2.png)
+![](../../image/install-mingw2.png)
  - tunggu proses instalasi selesai
-![](../image/install-mingw3.png)
+![](../../image/install-mingw3.png)
  - klik `continue`
-![](../image/install-mingw4.png)
+![](../../image/install-mingw4.png)
  - klik `mark for installation` pada semua package
-![](../image/install-mingw5.png)
+![](../../image/install-mingw5.png)
  - klik `apply changes`
-![](../image/install-mingw6.png)
-4. Setelah instalasi selesai, akses folder instalasi MinGW dan cari folder dengan nama bin
-5. Kemudian copy letak folder bin seperti gambar berikut (sesuaikan dengan alamat folder kalian menginstall MinGW)
-![](../image/install-mingw7.png)
-6. Buka windows dan cari `environment`
-![](../image/install-mingw8.png)
-7. Klik pada tab `environment variabel`
-![](../image/install-mingw9.png)
-8. Kemudian pada bagan `system variabel` pilih tab `path` dan klik `edit`
-![](../image/install-mingw10.png)
-9. Setelah tab edit environment variabel terbuka, klik tab `edit`
-![](../image/install-mingw11.png)
-10. Kemudian pastekan alamat folder bin MinGW yang telah dicopy sebelumnya
-![](../image/install-mingw12.png)
-11. Untuk instalisasi VSCode dapat melihat video pada link berikut ini [Instalasi VSCode](https://youtu.be/oWriY67kGQ0)
-12. Tambahan untuk bahasa C/C++ pada VSCode dilakukan pemasangan ekstension seperti pada gambar berikut dengan klik install
-![](../image/install-mingw13.png)
-13. Pasang ekstensi Code Runner
-![](../image/install-mingw14.png) 
-14. Yang Terakhir ubah konfigurasi untuk running programnya ke terminal dengan cara klik **file > preferences > settings > Extension > Run code configuration > check list bagian yang bertulisan Run in Terminal**
+![](../../image/install-mingw6.png)
+3. Setelah instalasi selesai, akses folder instalasi MinGW dan cari folder dengan nama bin
+4. Kemudian copy letak folder bin seperti gambar berikut (sesuaikan dengan alamat folder kalian menginstall MinGW)
+![](../../image/install-mingw7.png)
+5. Buka windows dan cari `environment`
+![](../../image/install-mingw8.png)
+6. Klik pada tab `environment variabel`
+![](../../image/install-mingw9.png)
+7. Kemudian pada bagan `system variabel` pilih tab `path` dan klik `edit`
+![](../../image/install-mingw10.png)
+8. Setelah tab edit environment variabel terbuka, klik tab `edit`
+![](../../image/install-mingw11.png)
+9.  Kemudian pastekan alamat folder bin MinGW yang telah dicopy sebelumnya
+![](../../image/install-mingw12.png)
+10.  Untuk instalisasi VSCode dapat melihat video pada link berikut ini [Instalasi VSCode](https://youtu.be/oWriY67kGQ0)
+11.  Tambahan untuk bahasa C/C++ pada VSCode dilakukan pemasangan ekstension seperti pada gambar berikut dengan klik install
+![](../../image/install-mingw13.png)
+12.  Pasang ekstensi Code Runner
+![](../../image/install-mingw14.png) 
+13.  Yang Terakhir ubah konfigurasi untuk running programnya ke terminal dengan cara klik **file > preferences > settings > Extension > Run code configuration > check list bagian yang bertulisan Run in Terminal**
 
 # Input dan Output
 Dalam pemograman, kita dapat memasukkan(_input_) data ke dalam program dan dapat mengeluarkan (_output_) data. Operasi _input_ dan _output_ dilakukan dengan menggunakan fungsi-fungsi yang ada pada library `<stdio.h>`. Sebelum itu, mari kita mengenal struktur utama program C.
