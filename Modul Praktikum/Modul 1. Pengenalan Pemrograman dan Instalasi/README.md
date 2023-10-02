@@ -140,14 +140,15 @@ Secara default, compiler C tidak ada di Windows. Namun, bisa diinstall melalui M
 7. Klik `Environment Variables`. Kemudian pada bagan `system variabel` pilih tab `path` dan klik `edit`
 
    ![](../../assets/install-mingw10.png)
-
-8. Setelah tab edit environment variabel terbuka, klik tab `edit`
-
    ![](../../assets/install-mingw11.png)
+
+8. Setelah tab edit environment variabel terbuka, klik tab `new`
+
+   ![](../../assets/install-mingw12.png)
 
 9. Kemudian pastekan alamat folder bin MinGW yang telah dicopy sebelumnya
 
-   ![](../../assets/install-mingw12.png)
+   ![](../../assets/install-mingw13.png)
 
 10. Reboot laptop. Buka Powershell, kemudian ketikkan `gcc --version`. Instalasi dikatakan sukses apabila terminal menampilkan versi GCC.
 
