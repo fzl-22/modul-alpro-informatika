@@ -47,19 +47,19 @@ Ketika ingin belajar pemrograman, sudah pasti kita akan membutuhkan software unt
 ### Windows
 1. Install Visual Studio Code sesuai dengan OS yang dipakai pada link berikut [Visual Studio Code](https://code.visualstudio.com/) 
 
-   ![Tampilan Website Download VScode](../../image/download-vscode.png)
+   ![Tampilan Website Download VScode](../../assets/download-vscode.png)
 2. Setelah instalasi selesai, buka file yang telah diinstal dan klik "I accept the agreement". Lalu, klik next.
 
-   ![Tampilan Setup VScode 2](../../image/download-vscode-2.png)
+   ![Tampilan Setup VScode 2](../../assets/download-vscode-2.png)
 3. Biarkan semua tercentang secara *default*. Klik next.
 
-   ![Tampilan Setup VScode 3](../../image/download-vscode-3.png)
+   ![Tampilan Setup VScode 3](../../assets/download-vscode-3.png)
 4. Tunggu proses instalasi hingga selesai.
 
-   ![Tampilan Setup VScode 4](../../image/download-vscode-4.png)
+   ![Tampilan Setup VScode 4](../../assets/download-vscode-4.png)
 5. Instalasi selesai dan Visual Studio Code siap digunakan!
 
-   ![Tampilan Setup VScode 5](../../image/download-vscode-5.png)
+   ![Tampilan Setup VScode 5](../../assets/download-vscode-5.png)
 
 ### Linux (*Debian-based*)
 
@@ -101,53 +101,53 @@ Secara default, compiler C tidak ada di Windows. Namun, bisa diinstall melalui M
 2. Setelah MinGW berhasil didownload, lakukan instalasi MinGW sesuai dengan gambar di bawah ini.
     - klik `install`
 
-      ![](../../image/install-mingw1.png)
+      ![](../../assets/install-mingw1.png)
  
    - klik `continue`
 
-      ![](../../image/install-mingw2.png)
+      ![](../../assets/install-mingw2.png)
 
    - tunggu proses instalasi selesai
 
-      ![](../../image/install-mingw3.png)
+      ![](../../assets/install-mingw3.png)
 
    - klik `Continue`
 
-      ![](../../image/install-mingw4.png)
+      ![](../../assets/install-mingw4.png)
 
    - klik `Mark for installation` pada semua package
 
-      ![](../../image/install-mingw5.png)
+      ![](../../assets/install-mingw5.png)
 
    - klik `Apply Changes`
 
-      ![](../../image/install-mingw6.png)
+      ![](../../assets/install-mingw6.png)
 
 3. Setelah instalasi selesai, akses folder instalasi MinGW dan cari folder dengan nama `bin`
 
 4. Kemudian copy letak folder bin seperti gambar berikut (sesuaikan dengan alamat folder kalian menginstall MinGW)
 
-   ![](../../image/install-mingw7.png)
+   ![](../../assets/install-mingw7.png)
 
 5. Buka windows dan cari `Edit the system environment variables`
 
-   ![](../../image/install-mingw8.png)
+   ![](../../assets/install-mingw8.png)
 
 6. Klik pada tab `Edit the system environment variables`
 
-   ![](../../image/install-mingw9.png)
+   ![](../../assets/install-mingw9.png)
 
 7. Klik `Environment Variables`. Kemudian pada bagan `system variabel` pilih tab `path` dan klik `edit`
 
-   ![](../../image/install-mingw10.png)
+   ![](../../assets/install-mingw10.png)
 
 8. Setelah tab edit environment variabel terbuka, klik tab `edit`
 
-   ![](../../image/install-mingw11.png)
+   ![](../../assets/install-mingw11.png)
 
 9. Kemudian pastekan alamat folder bin MinGW yang telah dicopy sebelumnya
 
-   ![](../../image/install-mingw12.png)
+   ![](../../assets/install-mingw12.png)
 
 10. Reboot laptop. Buka Powershell, kemudian ketikkan `gcc --version`. Instalasi dikatakan sukses apabila terminal menampilkan versi GCC.
 
@@ -165,11 +165,11 @@ Namun, kadang-kadang distro lain menggunakan nama package yang berbeda. Sebagai 
 
 1.  Tambahan untuk bahasa C/C++ pada VSCode dilakukan pemasangan ekstension seperti pada gambar berikut dengan klik install
 
-      ![](../../image/c%20extensions.png)
+      ![](../../assets/c%20extensions.png)
 
 2.  Pasang ekstensi Code Runner
 
-      ![](../../image/install-mingw14.png) 
+      ![](../../assets/install-mingw14.png) 
 
 3.  Yang Terakhir ubah konfigurasi untuk running programnya ke terminal dengan cara klik **file > preferences > settings > Extension > Run code configuration > check list bagian yang bertulisan Run in Terminal**
 
