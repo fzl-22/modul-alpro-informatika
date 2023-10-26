@@ -208,7 +208,7 @@ Output
 
 Apabila diilustrasikan, bentuk array dua dimensi layaknya baris dan kolom, seperti gambar di bawah.
 
-<img src="https://github.com/fzl-22/ALPRO-Informatika-ITTelkomSurabaya/blob/master/image/multidimensionalarray-1.jpg" width="800">
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy9SRu-03fi7lK--P1ZLYRSv5ytikWSp1HeQ&usqp=CAU)
 
 Selain bentuk dua dimensi, kita dapat membuat array hingga N-dimensi, sesuai kebutuhan.
 
