@@ -10,7 +10,7 @@ Pointer nantinya dapat mengakses data dari variabel yang direferensikan.
 ````
 Setiap variabel pada program yang kita buat pasti memiliki alamat memori. Alamat memori berfungsi untuk menentukan lokasi penyimpanan data suatu variabel pada memori (RAM).
 
-![](https://github.com/fzl-22/ALPRO-Informatika-ITTelkomSurabaya/blob/master/image/PENGENALAN%20POINTER.PNG)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Pointers.svg/1200px-Pointers.svg.png)
 - Pada gambar di atas dimisalkan jika variabel `x` memiliki alamat memori 1000 dan pointer `ptr` memiliki alamat memori 2000.
 - `int x = 5` berguna untuk menyimpan value 5 ke dalam variabel `x`.
 - Simbol ampersand `&` berguna untuk mendapatkan alamat memori dari variabel tertentu, maka `int *ptr = &x` berguna untuk menyimpan value berupa alamat memori dari variabel `x` ke dalam pointer `ptr`.
