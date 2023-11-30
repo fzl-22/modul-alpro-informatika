@@ -110,28 +110,16 @@ int main()
    ``````
    Angka 5 berada pada baris ke 0 kolom ke 2.
    ``````
-2. Buatlah program untuk menghitung jumlah setiap huruf dari sebuah kalimat
+2. Dalam penulisan syntax dalam pemrograman, terdapat beberapa konvensi. Salah satunya adalah `snake_case` dan `camelCase`. Diberikan sebuah input nama variabel dalam penulisan `snake_case`, misalnya `is_variable_true`. Buatlah program untuk mengubah penulisan tersebut menjadi `camelCase`, yaitu `isVariableTrue`. Test case input dipastikan berupa `snake_case`.
 
-   Input : 
-   ``````
-   "apa kabar semuanya, apakah semuanya baik baik saja";
-   ``````
-   Output :
-   ``````
-   huruf a ada 15
-   huruf b ada 3
-   huruf e ada 2
-   huruf h ada 1
-   huruf i ada 2
-   huruf j ada 1
-   huruf k ada 4
-   huruf m ada 2
-   huruf n ada 2
-   huruf p ada 2
-   huruf r ada 1
-   huruf s ada 3
-   huruf u ada 2
-   huruf y ada 2
-   ``````
+    Input:
+    ```
+    is_sorted_array
+    ```
+    
+    Output:
+    ```
+    isSortedArray
+    ```
 
-3. Buatlah Sequential Algoritm dengan menggunakan while looping.
+4. Buatlah Sequential Algoritm dengan menggunakan while looping.
