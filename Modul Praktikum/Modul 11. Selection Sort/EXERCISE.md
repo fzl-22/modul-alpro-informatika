@@ -6,11 +6,13 @@ Buatlah program menu koperasi yang dapat menginputkan nama produk dan harga prod
 
 <br>
 Note :
+
 * Anda dapat menggunakan tipe data bentukan ([Struct](https://github.com/fzl-22/ALPRO-Informatika-ITTelkomSurabaya/wiki/Modul-2.1:-Tipe-Data-Struct)) yang isinya barang dan harga
 * Inputan dari user hanya Barang dan Harga
 * Ascending untuk dua angka terakhir **NIM GENAP**
 * Descending untuk dua angka terakhir **NIM Ganjil**
 <br>
+
 Menu : <br>
 
 ![Menu](https://user-images.githubusercontent.com/90125356/208221869-855fbc33-6fb7-4488-8b16-c3b8b50f93b6.png)
