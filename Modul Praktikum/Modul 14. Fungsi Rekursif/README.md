@@ -6,7 +6,7 @@ Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri. Masih bingung? Mar
 
 Perhatikan gambar boneka lucu di bawah ini:
 
-[[https://github.com/fzl-22/ALPRO-SainsData-ITTelkomSurabaya/blob/master/images/russian%20dolls%20cropped%20for%20RR10.jpg]]
+![image](https://github.com/fzl-22/ALPRO-SainsData-ITTelkomSurabaya/blob/master/images/russian%20dolls%20cropped%20for%20RR10.jpg)
 
 Gambar di atas adalah gambar boneka Matryoshka dari Russia. Apabila boneka di paling kiri (boneka paling besar) dibuka, maka akan muncul boneka lain yang bentuknya sama namun berbeda ukuran, yaitu boneka kedua dari kiri. Jika boneka kedua dari kiri dibuka, maka akan muncul boneka ketiga dari kiri. Proses ini dapat berjalan hingga muncul boneka terakhir, yaitu boneka terkecil yang sudah tidak memiliki 'anak' lagi.
 
