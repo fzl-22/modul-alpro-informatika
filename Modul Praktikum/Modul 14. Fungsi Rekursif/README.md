@@ -38,7 +38,7 @@ Pada gambar kotak di atas merupakan kondisi ketika fungsi memanggil dirinya send
 
 Sebagai contoh, kita akan membuat fungsi rekursif untuk menghitung pangkat dari suatu bilangan bulat. Definisikan fungsi $power(a, n)$ adalah perpangkatan bilangan $a$ terhadap $n$. Atau dengan definisi lain, dinyatakan bahwa $power(a, n)$ adalah perkalian berulang bilangan $a$ sebanyak $n$-kali. Sehingga, dapat dituliskan sebagai berikut:
 
-[[https://github.com/fzl-22/ALPRO-SainsData-ITTelkomSurabaya/blob/master/images/power%20function%20equation.png]]
+![image](https://github.com/fzl-22/ALPRO-SainsData-ITTelkomSurabaya/blob/master/images/power%20function%20equation.png)
 
 Hal tersebut bisa kita buktikan dengan observasi sederhana seperti berikut:
 $$power(5,4)=5^4=5\times 5^3=5\times 5\times 5^2=5\times 5\times 5\times 5^1=5\times 5\times 5\times 5\times 5^0=5\times 5\times 5\times 5\times 1$$
