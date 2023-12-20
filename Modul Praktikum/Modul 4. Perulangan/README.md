@@ -25,7 +25,7 @@ for(int a = 0; a < 10; a++){}
 Adapun sytax keseluruhan untuk perulangan for adalah sebagai berikut
 ```````c
 for(initial condition; looping condition; step){
-   statment;
+   statement;
 }
 ```````
 Berikut merupakan contoh dari program perulangan for : 
@@ -49,7 +49,7 @@ Perulangan while tersebut akan terus berlangsung hingga kondisi di dalam tanda (
 ``````c
 int a = 0;
 while(a < 10){
-     printf("ini adalah angka : %d\n",a);
+     printf("ini adalah angka : %d\n", a);
      a++;
 }
 ``````
@@ -65,8 +65,8 @@ do{
 Berikut merupakan contoh dari looping `do-while` : 
 ``````c
 int a = 0;
-do{
-  printf("ini adalah angka : %d:,a);
+do {
+  printf("ini adalah angka : %d\n", a);
   a++;
 }while(a < 10);
 ``````
@@ -74,17 +74,17 @@ Perulangan di atas akan dijalankan terlepas dari kondisi a menghasilkan `true` a
 ``````c
 int a = 10;
 do{
-  printf("ini adalah angka : %d",a);
+  printf("ini adalah angka : %d\n",a);
 }while(a < 10);
 `````` 
 # Perulangan Bersarang/Nested Loop
 Perulangan bersarang atau _nested loop_ merupakan kondisi dimana sebuah perulangan memiliki perulangan lain sebeagai statementnya atau sebuah perulangan menjadi statement dari sebuah perulangan lain. Contoh penulisan dari nested loop adalah sebagai berikut : 
 ``````c
-for(int a = 0; a < 10; a++){
-   for(int b = 0; b < 10; b++){
-      printf("ini adalah angka : %d\n",b)'
+for(int a = 0; a < 10; a++) {
+   for(int b = 0; b < 10; b++) {
+      printf("ini adalah angka : %d\n", b);
    }
-   printf("ini adalah angka : %d\n",a);
+   printf("ini adalah angka : %d\n", a);
 }
 ``````
 Pada perulangan bersarang, perulangan yang dijalankan terlebih dahulu adalah perulangan yang terdapat di dalam perulangan lain. Contoh pada kode program di atas, perulangan dengan variabel parameter b dijalankan hingga selesai terlebih dahulu dan kemudian dilanjutkan dengan perulangan terluar. Perulangan b juga dilakukan sebanyak perulangan a. Contoh pada program di atas, perulangan b akan dilakukan sebanyak 10 kali dengan perulangan b melakukan perulangan sebanyak 10 kali juga. Sehingga, perulangan b melakukan 100 kali perulangan. 
