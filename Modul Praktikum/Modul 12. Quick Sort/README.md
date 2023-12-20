@@ -8,18 +8,24 @@ Untuk melakukan recursive maka dapat dituliskan sebagai berikut :
 ``````C
 #include <stdio.h>
 
-int rekursif(int x){
-    printf("%d", x);
-    if (x > 0){ // --> Recursive Case (kondisi yang apabila bernilai true akan memanggil dirinya sendiri)
-        return rekursif(x - 1); 
-    }else{ // --> Base Case (kondisi yang apabila bernilai true akan mengentikan rekursi)
-        return;
-    }
+void recursive(int x) {
+  printf("%d ", x);
+  if (x >= 0) recursive(x - 1);
+  return;
 }
 
-int main(){
-    int y = rekursif(10);
+int factorial(int n) {
+  if (n > 0) return n * factorial(n - 1);
+  else return 1;
 }
+
+int main(int argc, char *argv[]){
+  int result = factorial(5);
+  printf("RESULT: %d\n", result);
+
+  return 0;
+}
+
 ``````
 Output : 
 ``````
@@ -58,70 +64,55 @@ Berikut merupakan kode program quick sort dengan pivot pada index akhir :
 ``````C
 #include <stdio.h>
 
-int quicksort(int x, int y, int z[])
-{
+void print_arr(int *arr, int size) {
+  for(int i = 0; i < size; i++) {
+    printf("%d ", *(arr + i));
+  }
 
-    int start, finish, pivot, temp, cek;
-    start = x;
-    finish = y;
-    pivot = y;
-
-    if (start <= finish)
-    {
-        while (start < finish)
-        {
-            while (z[start] <= z[pivot]) // --> Mencari nilai yang lebih besar dari pivot
-            {
-                start++;
-            }
-            while (z[finish] > z[pivot]) // --> Mencari nilai yang lebih kecil dari pivot
-            {
-                finish--;
-            }
-            if (start < finish) // --> Memastikan bahwa pencarian nilai lebih besar dan lebih kecil belum saling bertemu
-            {
-                // Menukar nilai yang lebih besar dengan pivot dengan nilai yang lebih kecil dari pivot
-                temp = z[finish];
-                z[finish] = z[start];
-                z[start] = temp;
-            }
-        }
-        // Menukar nilai pivot dengan nilai pencarian nilai lebih kecil
-        temp = z[pivot]; 
-        z[pivot] = z[finish];
-        z[finish] = temp;
-
-        quicksort(x, finish - 1, z);
-        quicksort(finish + 1, y, z);
-    }
-    else
-    {
-        return;
-    }
+  printf("\n");
 }
 
-void tampil(int x[], int y)
-{
-    for (int a = 0; a < y; a++)
-    {
-        printf("%d ", x[a]);
-    }
-    puts(" ");
+void swap(int *x, int *y) {
+  int temp = *x;
+  *x = *y;
+  *y = temp;
 }
 
-int main()
-{
+void quick_sort(int *arr, int x, int y) {
+  int start, end, pivot;
 
-    int angka[] = {3, 5, 1, 4, 2, 6, 10, 7, 9, 8};
-    int jumlah = sizeof(angka) / sizeof(angka[0]);
+  start = x;
+  end = y;
+  pivot = end;
 
-    printf("ARRAY SEBELUM SORTING : ");
-    tampil(angka, jumlah);
+  if (start > end) return;
 
-    quicksort(0, jumlah - 1, &angka);
+  while (start < end) {
+    while(arr[start] <= arr[pivot]) start++;
+    while(arr[end] > arr[pivot]) end--;
 
-    printf("ARRAY SESUDAH SORTING : ");
-    tampil(angka, jumlah);
+    if(start < end) swap(&arr[start], &arr[end]);
+  }
+
+  swap(&arr[pivot], &arr[end]);
+
+  quick_sort(arr, x, end - 1);
+  quick_sort(arr, end + 1, y);
+}
+
+int main(int argc, char *argv[]){
+  int arr[] = {3, 5, 1, 4, 2, 6, 10, 7, 9, 8};
+  int size = sizeof(arr)/sizeof(int);
+
+  printf("Array before sorted:\n");
+  print_arr(arr, size);
+ 
+  quick_sort(arr, 0, size - 1);
+  
+  printf("Array setelah sorted:\n");
+  print_arr(arr, size);
+
+  return 0;
 }
 ``````
 Output : 
