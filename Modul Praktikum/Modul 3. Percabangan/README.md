@@ -188,24 +188,24 @@ int nilai;
 printf("Masukkan Nilai : ");
 scanf("%d",&nilai);
 
-if (nilai > 80 && nilai <= 100){
+if (nilai > 80 && nilai <= 100) {
     printf("Predikat A");
-    if (nilai == 100){
+    if (nilai == 100) {
         printf("Selamat! Mahasiswa mendapatkan nilai sempurna!");
-    }else if (nilai == 99){
+    } else if (nilai == 99) {
         printf("Selamat! Nilai mahasiswa nyaris sempurna!");
-    }else{
+    } else{
         printf("Selamat!");
     }
-else if (nilai > 70 && nilai <= 80){
+} else if (nilai > 70 && nilai <= 80) {
     printf("Predikat B");
-}else if (nilai > 60 && nilai <= 70){
+} else if (nilai > 60 && nilai <= 70) {
     printf("Predikat C");
-}else if (nilai > 50 && nilai <= 60){
+} else if (nilai > 50 && nilai <= 60) {
     printf("Predikat D");
-else if (nilai >= 0 && nilai <= 50){
+} else if (nilai >= 0 && nilai <= 50) {
     printf("Predikat E");
-else{
+} else {
     printf("Nilai tidak valid");
 }
 printf("Program telah selesai dijalankan");
